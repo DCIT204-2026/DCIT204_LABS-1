@@ -29,6 +29,7 @@ public class Main{
         sortedArr.sort(null);
         int binarySearchResult = Algorithms.binarySearch(sortedArr, target);
         System.out.println("The target element using Binary Search is found at index: " + binarySearchResult);
+        scan.close();
     }
 }
 
