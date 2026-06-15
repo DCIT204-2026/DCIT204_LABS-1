@@ -19,6 +19,7 @@ public class Main {
         }
         System.out.println();
 
+        
         System.out.print("Enter target value: ");
         int target = scanner.nextInt();
         System.out.println();
@@ -36,6 +37,7 @@ public class Main {
 
         int binaryResult = Algorithms.binarySearch(userArray, target);
         System.out.println("Binary Search Result:");
+
         if (binaryResult != -1) {
             System.out.println("Target found at index " + binaryResult);
         } else {
