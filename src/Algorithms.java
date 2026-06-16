@@ -1,2 +1,37 @@
 public class Algorithms {
-}
+
+        public static int linearSearch(int[] array, int target) {
+            // Linear Search Algorithm
+
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == target) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+        public static int binarySearch(int[] array, int target) {
+            // Binary Search Algorithm
+            int left = 0;
+            int right = array.length - 1;
+
+
+            while (left <= right) {
+                int middle = (left + right) / 2;
+
+                if (array[middle] == target) {
+                    return middle;
+                }
+                if (array[middle] < target) {
+                    left = middle + 1;
+                }
+                else {
+                    right = middle - 1;
+                }
+
+            }
+
+            return -1;
+        }
