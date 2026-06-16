@@ -1,13 +1,5 @@
 public class Algorithm {
 
-    /**
-     * Searches for a target value by scanning each element one by one.
-     * Time complexity: O(n)
-     *
-     * @param array  the array to search through
-     * @param target the value to find
-     * @return the index of the target if found, or -1 if not found
-     */
     public static int linearSearch(int[] array, int target) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == target) {
@@ -15,21 +7,14 @@ public class Algorithm {
             }
         }
         return -1;
+        // -1 is returned if our preferred element is not found
     }
 
-    /**
-     * Searches for a target value in a SORTED array by halving the search
-     * space on each step.
-     * Time complexity: O(log n)
-     *
-     * @param array  a sorted array to search through
-     * @param target the value to find
-     * @return the index of the target if found, or -1 if not found
-     */
+   
     public static int binarySearch(int[] array, int target) {
         int low  = 0;
         int high = array.length - 1;
-
+    
         while (low <= high) {
             int mid = low + (high - low) / 2;   // avoids integer overflow
 
