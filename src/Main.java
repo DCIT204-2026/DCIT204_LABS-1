@@ -1,9 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Main class to demonstrate search algorithms.
- */
+//Main class to demonstrate search algorithms.
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
