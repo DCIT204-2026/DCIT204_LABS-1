@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,25 +11,39 @@ public class Main {
 
         for (int i = 0; i < n; i++)
         {
-            System.out.print("The array must be sorted");
-
             System.out.print("\nEnter element " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
 
         System.out.print("Enter target value: ");
         int target = sc.nextInt();
-
         System.out.println("\nThe target value is " + target);
 
 
-        System.out.println("\n Linear Search Result: ");
-        System.out.println("Target found at index "+ Algorithms.linearSearch(arr, target));
+        int linearResult = Algorithm.linearSearch(arr, target);
+        System.out.println("\nLinear Search Result:");
 
-        System.out.println("\nBinary Search Result: ");
-        System.out.println("Target found at index "+ Algorithms.binarySearch(arr, target));
+        if(linearResult == -1)
+        {
+            System.out.println("Target not found");
+        }
+        else
+        {
+            System.out.println("Target found at index " + linearResult);
+        }
 
+        Arrays.sort(arr);
+        int binaryResult = Algorithm.binarySearch(arr, target);
+        System.out.println("\nBinary Search Result:");
 
+        if(binaryResult == -1)
+        {
+            System.out.println("Target not found");
+        }
+        else
+        {
+            System.out.println("Target found at index " + binaryResult);
+        }
         sc.close();
     }
 }
