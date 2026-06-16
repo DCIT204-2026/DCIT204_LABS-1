@@ -156,7 +156,7 @@ Linear Search Result:
 Target found at index 3
 
 Binary Search Result:
-Target found at index 3
+Target found  at index 3
 ```
 
 ---
