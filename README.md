@@ -189,7 +189,7 @@ Repository:
 ### Step 2: Clone Your Fork
 
 ```bash
-git clone https://github.com/DCIT204-2026/DCIT204_LABS-1.git
+git clone https://github.com/GITHUBUSERNAME/DCIT204_LABS-1.git
 ```
 
 ---
