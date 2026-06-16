@@ -42,7 +42,7 @@ public class Main {
                 System.out.println("(Note: Index is based on the sorted version of the array)");
             }
         } else {
-            System.out.println("Target not found");
+            System.out.println("Target not found here");
         }
 
         scanner.close();
