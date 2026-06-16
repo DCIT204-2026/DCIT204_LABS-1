@@ -29,7 +29,7 @@ public class Main {
 
             int result2 = Algorithms.binarySearch(input,key);
             System.out.println("Binary Search Result: ");
-            if (result != -1 ){
+            if (result2 != -1 ){
                 System.out.println("Target found at index " + result2);
             }else {
                 System.out.println("Target not found");
