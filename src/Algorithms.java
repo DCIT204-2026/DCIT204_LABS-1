@@ -1,4 +1,4 @@
-public class Algorithms {
+public class Algorithm {
     public static int linearSearch(int[]array,int target{
         for(int i=0;i< array.length;i++){
             if(array[]==target){
