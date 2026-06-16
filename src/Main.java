@@ -34,6 +34,7 @@ public class Main {
 
         // Call Linear Search
         resLinearS = Algorithms.linearSearch(userInput, toFind);
+        
         // Call Binary Search
         resBinaryS = Algorithms.binarySearch(sortedUserInput, toFind);
 
