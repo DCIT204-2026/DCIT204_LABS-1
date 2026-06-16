@@ -1,4 +1,34 @@
-package PACKAGE_NAME;
-
 public class Algorithm {
+
+    //Implementation for Linear Search
+    public static int linearSearch(int[] array, int target){
+        for(int i=0;i < array.length; i++){
+            if(array[i] == target){
+                return i; //found the target
+            }
+        }
+        return -1; // not found the target
+    }
+
+    //For Binary Search Implementation
+    public static int binarySearch(int[] array, int target){
+        int low = 0;
+        int high = array.length - 1;
+
+        while(low <= high){
+            int mid = low + (high - low)/2;
+
+            if(array[mid] == target){
+                return mid; // found target
+            }
+            else if(array[mid] < target){
+                low = mid + 1; // Right half Search
+            }
+            else if(array[mid] > target){
+                high = mid - 1; //Left half Search
+            }
+        }
+        return -1; // target not found
+    }
 }
+
