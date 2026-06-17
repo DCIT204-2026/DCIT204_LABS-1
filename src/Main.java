@@ -15,12 +15,12 @@ public class Main {
             numbers[i] = input.nextInt();
         }
 
-        System.out.print("\nEnter target value: ");
+        System.out.println("Enter target value: ");
         int target = input.nextInt();
 
 
         int linearResult = Algorithms.linearSearch(numbers, target);
-        System.out.println("\nLinear Search Result:");
+        System.out.println("Linear Search Result:");
         if (linearResult != -1) {
             System.out.println("Target found at index " + linearResult);
         } else {
@@ -29,7 +29,7 @@ public class Main {
 
 
         int binaryResult = Algorithms.binarySearch(numbers, target);
-        System.out.println("\nBinary Search Result:");
+        System.out.println("Binary Search Result:");
         if (binaryResult != -1) {
             System.out.println("Target found at index " + binaryResult + " (in sorted version)");
         } else {
