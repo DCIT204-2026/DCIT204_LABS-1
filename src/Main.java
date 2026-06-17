@@ -40,8 +40,8 @@ public class Main {
         int linearSearchResult = Algorithms.linearSearch(n, array, target);
         int binarySearchResult = Algorithms.binarySearch(n, array, target);
 
-        System.out.println(linearSearchResult);
-        System.out.println(binarySearchResult);
+        System.out.println("Linear Result" + linearSearchResult);
+        System.out.println("Binary Result" + binarySearchResult);
         
     }
 
