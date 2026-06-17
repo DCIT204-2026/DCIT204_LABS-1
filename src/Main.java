@@ -11,7 +11,7 @@ class Main {
             int value = Integer.parseInt(System.console().readLine());
             count = Algorithm.insertSorted(array, count, value);
         }
-
+        
         System.out.println("Sorted array:");
         for (int i = 0; i < array.length; i++) {
             System.out.println("Index " + i + ": " + array[i]);
