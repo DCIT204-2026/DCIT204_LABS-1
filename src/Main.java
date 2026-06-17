@@ -1,5 +1,42 @@
-public class Main {
-    public static void main(String[] args) {
+import java.util.Scanner;
 
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter array size: ");
+        int size = input.nextInt();
+        int[] numbers = new int[size];
+
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter element " + (i + 1) + ": ");
+            numbers[i] = input.nextInt();
+        }
+
+        System.out.println("Enter target value: ");
+        int target = input.nextInt();
+
+
+        int linearResult = Algorithms.linearSearch(numbers, target);
+        System.out.println("Linear Search Result:");
+        if (linearResult != -1) {
+            System.out.println("Target found at index " + linearResult);
+        } else {
+            System.out.println("Target not found");
+        }
+
+
+        int binaryResult = Algorithms.binarySearch(numbers, target);
+        System.out.println("Binary Search Result:");
+        if (binaryResult != -1) {
+            System.out.println("Target found at index " + binaryResult + " (in sorted version)");
+        } else {
+            System.out.println("Target not found");
+        }
+
+        input.close();
     }
+
 }
