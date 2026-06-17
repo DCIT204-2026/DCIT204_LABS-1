@@ -1,5 +1,4 @@
 public class Algorithms {
-    public class Algorithm {
 
     /**
      * Linear Search: checks each element one by one until target is found.
@@ -36,6 +35,4 @@ public class Algorithms {
 
         return -1;
     }
-
-}
 }

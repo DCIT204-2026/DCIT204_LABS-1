@@ -1,6 +1,4 @@
-public class Main {
-    public static void main(String[] args) {
-        import java.util.Arrays;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -25,7 +23,7 @@ public class Main {
         int target = scanner.nextInt();
 
         // --- Linear Search ---
-        int linearResult = Algorithm.linearSearch(array, target);
+        int linearResult = Algorithms.linearSearch(array, target);
 
         System.out.println("\nLinear Search Result:");
         if (linearResult != -1) {
@@ -39,7 +37,7 @@ public class Main {
         int[] sortedArray = Arrays.copyOf(array, array.length);
         Arrays.sort(sortedArray);
 
-        int binaryResult = Algorithm.binarySearch(sortedArray, target);
+        int binaryResult = Algorithms.binarySearch(sortedArray, target);
 
         System.out.println("\nBinary Search Result:");
         System.out.println("(Array sorted for Binary Search)");
@@ -50,8 +48,5 @@ public class Main {
         }
 
         scanner.close();
-    }
-
-}
     }
 }
