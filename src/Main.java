@@ -15,7 +15,7 @@ public class Main {
             array[i] = input.nextInt();
         }
 
-        System.out.print("Enter the target value: ");
+        System.out.print("Enter the target value to obtain: ");
         int target = input.nextInt();
 
         int linearResult = Algorithms.linearSearch(array, target);
@@ -28,11 +28,11 @@ public class Main {
 
         Arrays.sort(array);
 
-        int binearyResult = Algorithms.binarySearch(array, target);
+        int theBinaryResult = Algorithms.binarySearch(array, target);
         System.out.println("Binary Search Result: ");
 
-        if(binearyResult != -1){
-            System.out.println("Target found at index: " + binearyResult + " (in the sorted array)");
+        if(theBinaryResult != -1){
+            System.out.println("Target found at index: " + theBinaryResult + " (in the sorted array)");
         }else {
             System.out.println("Target not found in this array.");
         }
