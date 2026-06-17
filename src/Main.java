@@ -24,7 +24,7 @@ public class Main {
         int target = scanner.nextInt();
 
         // ─── Step 4: Perform Linear Search ──────────────────────────
-        int linearResult = Algorithm.linearSearch(array, target);
+        int linearResult = Algorithms.linearSearch(array, target);
 
         System.out.println("\nLinear Search Result:");
         if (linearResult != -1) {
@@ -39,7 +39,7 @@ public class Main {
         Arrays.sort(sortedArray); // Sort the copy
 
         // ─── Step 6: Perform Binary Search ───────────────────────────
-        int binaryResult = Algorithm.binarySearch(sortedArray, target);
+        int binaryResult = Algorithms.binarySearch(sortedArray, target);
 
         System.out.println("\nBinary Search Result:");
         if (binaryResult != -1) {
