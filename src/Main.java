@@ -5,8 +5,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter array size: ");
-        int size = scanner.nextInt();
+        int size;
+        while (true) {
+            System.out.print("Enter array size: ");
+            size = scanner.nextInt();
+            if (size >= 0) {
+                break;
+            }
+            System.out.println("Array size must be non-negative. Please try again.");
+        }
 
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
@@ -28,8 +35,10 @@ public class Main {
         int[] sortedArray = Arrays.copyOf(array, array.length);
         Arrays.sort(sortedArray);
 
+        System.out.println("\nSorted array: " + Arrays.toString(sortedArray));
+
         int binaryResult = Algorithm.binarySearch(sortedArray, target);
-        System.out.println("\nBinary Search Result:");
+        System.out.println("\nBinary Search Result (in sorted array):");
         if (binaryResult != -1) {
             System.out.println("Target found at index " + binaryResult);
         } else {
