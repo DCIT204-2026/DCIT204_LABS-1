@@ -1,4 +1,5 @@
 public class Algorithms {
+<<<<<<< HEAD
     public static int LinearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
@@ -29,3 +30,6 @@ public class Algorithms {
         return -1;
     }
 }
+=======
+}
+>>>>>>> a17941715431849598a848611a044f07401d04ec

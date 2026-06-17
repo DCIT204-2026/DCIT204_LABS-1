@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class Main {
@@ -38,5 +39,10 @@ public class Main {
             System.out.println("Target not found in the array.");
         }
         scanner.close();
+=======
+public class Main {
+    public static void main(String[] args) {
+
+>>>>>>> a17941715431849598a848611a044f07401d04ec
     }
 }
