@@ -10,20 +10,20 @@ public class Algorithms {
 
 
     public static int binarySearch(int[] array, int target) {
-        int low = 0;
-        int high = array.length -1;
+        int startIndex = 0;
+        int endIndex = array.length -1;
 
-        while (low <= high) {
-            int mid = (low + high) / 2;
+        while (startIndex <= endIndex) {
+            int midIndex = (startIndex + endIndex) / 2;
 
-            if (array[mid] == target) {
-                return mid;
+            if (array[midIndex] == target) {
+                return midIndex;
             }
-            else if (array[mid] < target) {
-                low = mid + 1;
+            else if (array[midIndex] < target) {
+                startIndex = midIndex + 1;
             }
             else {
-                high = mid - 1;
+                endIndex = midIndex - 1;
             }
         }
 
